@@ -12,14 +12,14 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./sass/main.css">
     
     <title>WebStudio</title>
 </head>
 
 <body>
 
-    <header class="header">
+    <!-- <header class="header">
         <div class="header__header-container container">
             <a href="./index.html" class="header__logo">Web<span class="header__logo-black">Studio</span></a>
             <nav class="header__nav">
@@ -54,60 +54,17 @@
                 </a>
             </ul>
         </div>
-    </header>
+    </header> -->
 
     <main class="main">
-
-        <div class="overlay is-hidden" data-backdrop>
-            <form class="form is-hidden">
-                <h2 class="form__title">Залиште свої дані, ми Вам зателефонуємо</h2>
-                <button class="form__container" type="button" data-close-modal>
-                    <svg class="form__icon" width="11" height="11">
-                        <use href="./img/symbol-defs.svg#icon-button-close"></use>
-                    </svg>
-                </button>
-                <ul class="form__list">
-                    <li class="form__item">
-                        <label for="name" class="form__subtitle">Iм’я</label>
-                        <input type="text" class="form__field" required id="name">
-                        <svg class="form__svg" width="12" height="12">
-                            <use href="./img/symbol-defs.svg#icon-human"></use>
-                        </svg>
-                    </li>
-                    <li class="form__item">
-                        <label for="tel" class="form__subtitle">Телефон</label>
-                        <input type="tel" class="form__field" required id="tel">
-                        <svg class="form__svg" width="13" height="13">
-                            <use href="./img/symbol-defs.svg#icon-phone-form"> </use>
-                        </svg>
-                    </li>
-                    <li class="form__item">
-                        <label for="mail" class="form__subtitle">Пошта</label>
-                        <input type="email" class="form__field" required id="mail">
-                        <svg class="form__svg" width="15" height="12">
-                            <use href="./img/symbol-defs.svg#icon-mail-form"></use>
-                        </svg>
-                    </li>
-                    <li class="form__item">
-                        <h3 class="form__subtitle">Коментарі</h3>
-                        <textarea type="text" class="form__textarea" placeholder="Введите текст"></textarea>
-                    </li>
-                    <li class="form__item">
-                        <label for="comment" class="form__subtitle"></label>
-                        <input type="checkbox" class="form__checkbox" id="comment" required>
-                        <p class="form__text">Погоджуюсь з розсилкою і приймаю <a class="form__link" href="./"> Умови договору </a></p>
-                    </li>
-                </ul>
-                <button class="form__but" type="submit">Надіслати</button>
-            </form>
-        </div>
-
         <section class="hero">
+            <div class="container">
             <h1 class="hero__title">ефективні рішення для вашого бізнесу</h1>
             <button type="button" class="hero__but" data-open-modal>Замовити послугу</button>
+        </div>
         </section>
 
-        <section class="benefits">
+        <!-- <section class="benefits">
             <div class="container">
                 <ul class="benefits__list">
                     <li class="benefits__item">
@@ -139,9 +96,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
-        <section class="services">
+        <!-- <section class="services">
             <div class="container">
                 <h2 class="services__title">Чим ми займаємося</h2>
                 <ul class="services__list">
@@ -159,9 +116,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
-        <section class="team">
+        <!-- <section class="team">
             <div class="container">
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
@@ -311,9 +268,9 @@
                         </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
-        <section class="clients">
+        <!-- <section class="clients">
 
             <div class="container">
                 <h2 class="clients__title">Постійні клієнти</h2>
@@ -356,10 +313,10 @@
                 </ul>
             </div>
 
-        </section>
+        </section> -->
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer__container">
             <div class="footer__column1">
                 <a href="./index.html" class="footer__logo">Web<span class="logo__white">Studio</span></a>
@@ -421,7 +378,51 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
+
+    <div class="overlay is-hidden" data-backdrop>
+            <form class="form is-hidden">
+                <h2 class="form__title">Залиште свої дані, ми Вам зателефонуємо</h2>
+                <button class="form__container" type="button" data-close-modal>
+                    <svg class="form__icon" width="11" height="11">
+                        <use href="./img/symbol-defs.svg#icon-button-close"></use>
+                    </svg>
+                </button>
+                <ul class="form__list">
+                    <li class="form__item">
+                        <label for="name" class="form__subtitle">Iм’я</label>
+                        <input type="text" class="form__field" required id="name">
+                        <svg class="form__svg" width="12" height="12">
+                            <use href="./img/symbol-defs.svg#icon-human"></use>
+                        </svg>
+                    </li>
+                    <li class="form__item">
+                        <label for="tel" class="form__subtitle">Телефон</label>
+                        <input type="tel" class="form__field" required id="tel">
+                        <svg class="form__svg" width="13" height="13">
+                            <use href="./img/symbol-defs.svg#icon-phone-form"> </use>
+                        </svg>
+                    </li>
+                    <li class="form__item">
+                        <label for="mail" class="form__subtitle">Пошта</label>
+                        <input type="email" class="form__field" required id="mail">
+                        <svg class="form__svg" width="15" height="12">
+                            <use href="./img/symbol-defs.svg#icon-mail-form"></use>
+                        </svg>
+                    </li>
+                    <li class="form__item">
+                        <h3 class="form__subtitle">Коментарі</h3>
+                        <textarea type="text" class="form__textarea" placeholder="Введите текст"></textarea>
+                    </li>
+                    <li class="form__item">
+                        <label for="comment" class="form__subtitle"></label>
+                        <input type="checkbox" class="form__checkbox" id="comment" required>
+                        <p class="form__text">Погоджуюсь з розсилкою і приймаю <a class="form__link" href="./"> Умови договору </a></p>
+                    </li>
+                </ul>
+                <button class="form__but" type="submit">Надіслати</button>
+            </form>
+        </div>
 
     <script>
         const refs = {

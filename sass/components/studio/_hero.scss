@@ -2,20 +2,29 @@
     display: flex;
     flex-direction: column;
     background-color: #2F303A;
-    height: 600px;
+    height: 400px;
     align-items: center;
     justify-content: center;
     background: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../img/background/background.jpg');
+    @media screen and (min-width:1200px) {
+        height: 600px;
+    }
 }
 .hero__title{
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-    width: 696px;
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width:1200px) {
+        font-size: 44px;
+    }
+    
 }
 .hero__but{
     font-weight: 700;
@@ -30,5 +39,8 @@
     width: 200px;
     height: 50px;
     margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;    
 }
 

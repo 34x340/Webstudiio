@@ -3,11 +3,32 @@ body {
   font-family: "Roboto";
 }
 
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: solid red;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul {
@@ -27,12 +48,8 @@ textarea {
 }
 
 .header__header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: inherit;
 }
 
@@ -41,24 +58,16 @@ textarea {
 }
 
 .header__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 290px;
   margin-left: 93px;
   height: inherit;
 }
 
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 333px;
   margin-left: auto;
 }
@@ -80,13 +89,8 @@ textarea {
   letter-spacing: 0.02em;
   color: #212121;
   text-decoration: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
-  -webkit-transition: cubic-bezier(0.77, 0.22, 0.1, 0.96) 0.2s;
   transition: cubic-bezier(0.77, 0.22, 0.1, 0.96) 0.2s;
   position: relative;
   height: 100%;
@@ -99,13 +103,8 @@ textarea {
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
-  -webkit-transition: cubic-bezier(0.77, 0.22, 0.1, 0.96) 0.2s;
   transition: cubic-bezier(0.77, 0.22, 0.1, 0.96) 0.2s;
   position: relative;
   height: 100%;
@@ -148,34 +147,36 @@ textarea {
 }
 
 .hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-color: #2F303A;
-  height: 600px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/background/background.jpg");
+  height: 400px;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/background/background.jpg");
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+  }
 }
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
-  width: 696px;
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+  }
 }
 
 .hero__but {
@@ -186,12 +187,14 @@ textarea {
   color: #FFFFFF;
   background-color: #2196F3;
   border: 0;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   width: 200px;
   height: 50px;
   margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .benefits {
@@ -199,12 +202,8 @@ textarea {
 }
 
 .benefits__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .benefits__item:before {
@@ -261,12 +260,8 @@ textarea {
 }
 
 .services__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 50px;
 }
 
@@ -281,29 +276,23 @@ textarea {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-
 .services__item::before {
   content: "Десктопні додатки";
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   bottom: 4px;
   background-color: rgba(47, 48, 58, 0.8);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 70px;
 }
-
 .services__item:nth-child(2)::before {
   content: "Мобільні додатки";
 }
-
+.services__item:nth-child(2)::before {
+  content: "Мобільні додатки";
+}
 .services__item:nth-child(3)::before {
   content: "Дизайнерські рішення";
 }
@@ -323,19 +312,14 @@ textarea {
 }
 
 .team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 50px;
 }
 
 .team__item {
   background: #FFFFFF;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
 }
@@ -361,48 +345,32 @@ textarea {
 }
 
 .team__socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 206px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 16px auto 0;
 }
 
 .team__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 44px;
   height: 44px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: 0.2s;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+.team__link:hover {
+  border-radius: 50%;
+  background: #2196F3;
+  transition: 0.2s;
+}
+.team__link:hover > svg {
+  fill: #fff;
   transition: 0.2s;
 }
 
 .team__svg {
   fill: #AFB1B8;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.team__link:hover {
-  border-radius: 50%;
-  background: #2196F3;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.team__link:hover > svg {
-  fill: #fff;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -416,13 +384,9 @@ textarea {
 }
 
 .icons__team {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 206px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 16px auto 0;
 }
 
@@ -432,48 +396,33 @@ textarea {
 
 .clients__list {
   margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 1170px;
 }
 
 .clients__item {
   height: 90px;
   width: 170px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.clients__item_clients__item:hover {
+  border: 1px solid #2196F3;
   transition: 0.2s;
 }
 
 .clients__svg {
   fill: #AFB1B8;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.clients__item:hover {
-  border: 1px solid #2196F3;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
 .clients__item:hover > svg {
   fill: #2196F3;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -494,11 +443,9 @@ textarea {
   z-index: 3;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background: #FFFFFF;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
@@ -514,15 +461,9 @@ textarea {
 
 .form__container {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   top: 8px;
   right: 8px;
   width: 30px;
@@ -530,13 +471,10 @@ textarea {
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  -webkit-transition: cubic-bezier(0.11, 0.2, 0.55, 1.27) 0.2s;
   transition: cubic-bezier(0.11, 0.2, 0.55, 1.27) 0.2s;
 }
-
 .form__container:hover > .form__icon {
   fill: #2196F3;
-  -webkit-transition: ease 0.2s;
   transition: ease 0.2s;
 }
 
@@ -544,11 +482,9 @@ textarea {
   margin-top: 10px;
   position: relative;
 }
-
 .form__item:first-child {
   margin-top: 12px;
 }
-
 .form__item:last-child {
   font-family: "Roboto";
   font-weight: 400;
@@ -556,12 +492,8 @@ textarea {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 20px;
 }
 
@@ -633,8 +565,7 @@ textarea {
   width: 200px;
   height: 50px;
   background: #2196F3;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
   display: block;
@@ -655,14 +586,12 @@ textarea {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   z-index: 2;
-  -webkit-transition: cubic-bezier(0.11, 0.2, 0.55, 1.27) 0.4s;
   transition: cubic-bezier(0.11, 0.2, 0.55, 1.27) 0.4s;
 }
 
 .overlay.is-hidden {
   opacity: 0;
   pointer-events: none;
-  -webkit-transition: cubic-bezier(0.11, 0.2, 0.55, 1.27) 0.4s;
   transition: cubic-bezier(0.11, 0.2, 0.55, 1.27) 0.4s;
 }
 
@@ -675,8 +604,6 @@ textarea {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -725,36 +652,24 @@ textarea {
 
 .footer__socials {
   margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 206px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .footer__soc {
   width: 44px;
   border-radius: 50%;
   height: 44px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background: rgba(255, 255, 255, 0.1);
-  -webkit-transition: cubic-bezier(0.77, 0.22, 0.1, 0.96) 0.2s;
   transition: cubic-bezier(0.77, 0.22, 0.1, 0.96) 0.2s;
 }
 
 .footer__svg {
   fill: #FFF;
-  -webkit-transition: cubic-bezier(0.77, 0.22, 0.1, 0.96) 0.2s;
   transition: cubic-bezier(0.77, 0.22, 0.1, 0.96) 0.2s;
 }
 
@@ -764,14 +679,12 @@ textarea {
 
 .footer-svg {
   fill: #FFF;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
 .footer-soc:hover {
   border-radius: 50%;
   background: #2196F3;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -781,31 +694,20 @@ textarea {
 }
 
 .footer__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 570px;
   margin-top: 20px;
 }
 
 .footer__but {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 200px;
   height: 50px;
   background: #2196F3;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
   border: 0;
   font-family: "Roboto";
@@ -823,8 +725,7 @@ textarea {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
   font-family: "Roboto";
@@ -834,7 +735,6 @@ textarea {
   padding: 15px 16px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  -webkit-transition: ease 0.2s;
   transition: ease 0.2s;
 }
 
@@ -845,10 +745,4 @@ textarea {
 .footer__send {
   fill: #fff;
   margin-left: 12px;
-}
-
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */
