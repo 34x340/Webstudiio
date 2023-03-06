@@ -4,8 +4,9 @@
 .clients__list{
     margin-top: 50px;
     display: flex;
-    justify-content: space-between;
-    width: 1170px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 .clients__item{
     height: 90px;
