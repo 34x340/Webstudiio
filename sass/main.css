@@ -65,18 +65,39 @@ textarea {
 }
 
 .header__list {
-  display: flex;
+  display: none;
   justify-content: space-between;
   width: 290px;
   margin-left: 93px;
   height: inherit;
 }
+@media screen and (min-width: 768px) {
+  .header__list {
+    display: flex;
+  }
+}
+
+.button__menu {
+  margin-left: auto;
+  background-color: white;
+  border: 0px;
+}
+@media screen and (min-width: 768px) {
+  .button__menu {
+    display: none;
+  }
+}
 
 .contacts {
-  display: flex;
+  display: none;
   justify-content: space-between;
   width: 333px;
   margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+  }
 }
 
 .header__logo, .footer-logo {
