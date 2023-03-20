@@ -53,7 +53,7 @@
                     +38 096 111 11 11
                 </a>
             </ul>
-            <button class="button__menu">
+            <button class="button__menu" data-menu-open>
                 <svg width="40px" height="40px" class="menu__svg">
                     <use href="./img/symbol-defs.svg#icon-menu-2"></use>
                 </svg>
@@ -385,6 +385,12 @@
         </div>
     </footer> -->
 
+    <div class="menu-modal is-hidden" data-menu>
+        <button type="button" data-menu-close>
+            close
+        </button>
+    </div>
+
     <div class="overlay is-hidden" data-backdrop>
             <form class="form is-hidden">
                 <h2 class="form__title">Залиште свої дані, ми Вам зателефонуємо</h2>
@@ -458,7 +464,9 @@
 
       </script>
 
-    
+      <script src="./js/menu.js">
+
+      </script>
 </body>
 
 </html>
