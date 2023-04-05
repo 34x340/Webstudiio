@@ -57,12 +57,16 @@
 .contacts{
     display: none;
     justify-content: space-between;
-    width: 333px;
     margin-left: auto;
 
     @media screen and (min-width: 768px) {
-        display: flex;
+        display: block;
+        margin-left: auto;
 
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
     }
 }
 
@@ -140,3 +144,4 @@
 .contacts-contact{
     color: #757575;
 }
+
