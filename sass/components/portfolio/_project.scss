@@ -10,6 +10,19 @@
     padding-bottom: 20px;
     margin-top: 0;
     position: relative;
+    width: 100%;
+
+    @media screen and (min-width:480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 370px;
+    }
 
     &:nth-child(n+4){
     margin-top: 30px;

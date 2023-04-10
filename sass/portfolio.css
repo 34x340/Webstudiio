@@ -6,7 +6,6 @@ body {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  outline: solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -159,6 +158,7 @@ textarea {
   transition: cubic-bezier(0.77, 0.22, 0.1, 0.96) 0.2s;
   position: relative;
   height: 100%;
+  margin-right: 30px;
 }
 
 .header__link:hover {
@@ -195,6 +195,12 @@ textarea {
 
 .contacts-contact {
   color: #757575;
+}
+
+@media screen and (min-width: 768px) {
+  .header-menu__list {
+    display: none;
+  }
 }
 
 .portfolio {
@@ -242,6 +248,22 @@ textarea {
   padding-bottom: 20px;
   margin-top: 0;
   position: relative;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .project__item {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .project__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project__item {
+    width: 370px;
+  }
 }
 .project__item:nth-child(n+4) {
   margin-top: 30px;
